@@ -376,6 +376,7 @@
 		column-gap: 15px;
 		&__previous {
 			color: #cfdfe7;
+			cursor: pointer;
 			&:hover {
 				color: #b1c0ce;
 			}
@@ -393,6 +394,7 @@
 			height: 40px;
 			border: 2px solid #cfdfe7;
 			border-radius: 5px;
+			cursor: pointer;
 			&:hover,
 			&.active {
 				background: #485f7c;
@@ -400,10 +402,14 @@
 				border-color: #485f7c;
 				color: #fff;
 			}
+			&.active {
+			    	cursor: default;
+			}
 		}
 		&__next {
 			color: #cfdfe7;
 			transform: rotate(-180deg);
+			cursor: pointer;
 			&:hover {
 				color: #b1c0ce;
 			}
