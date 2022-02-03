@@ -1,0 +1,622 @@
+.page {
+	background: #e9f0f3;
+}
+
+.section {
+	margin-bottom: 100px;
+	@media (max-width: $mobileSmall) {
+		margin-bottom: 60px;
+	}
+}
+
+//BANNER START====================================================================================================
+
+.banner {
+	position: relative;
+
+	&__container {
+	}
+	&__content {
+		padding: 145px 0px 145px 30px;
+		position: relative;
+		z-index: 2;
+		@media (max-width: $mobileSmall) {
+			padding: 25px 0px 25px 0px;
+		}
+	}
+	&__title {
+		font-family: Philosopher;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 48px;
+		line-height: 54px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+		@media (max-width: $mobileSmall) {
+			font-size: 24px;
+			line-height: 27px;
+			margin-bottom: 10px;
+		}
+	}
+	&__subtitle {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 140%;
+		margin-bottom: 50px;
+		@media (max-width: $mobileSmall) {
+			font-size: 13px;
+			margin-bottom: 25px;
+		}
+	}
+	&__button {
+		background: #a3cf59;
+		border-radius: 5px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		min-height: 80px;
+		padding: 30px 0px;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 22px;
+		text-transform: uppercase;
+		color: #ffffff;
+		max-width: 300px;
+		&::after {
+			content: url("@img/header/button.png");
+			position: relative;
+			transform: scale(0.8);
+			right: -5px;
+			top: 2px;
+		}
+		@media (max-width: $mobileSmall) {
+			font-size: 13px;
+			min-height: 45px;
+			max-width: 167px;
+			padding: 10px 0px;
+		}
+	}
+	&__bg {
+		@media (min-width: $mobileSmall) {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+		}
+	}
+	&__bg-mob {
+		@media (max-width: $mobileSmall) {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			img {
+				object-position: bottom;
+			}
+		}
+	}
+}
+
+//BANNER END====================================================================================================
+
+//STREAMS START ========================================================================================================================================================
+
+.streams {
+	&__container {
+	}
+	&__content {
+	}
+	&__title {
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 27px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		@media (max-width: $mobile) {
+			font-size: 18px;
+		}
+		span {
+			&:first-child {
+				&::first-letter {
+					color: #ef302e;
+				}
+			}
+		}
+		span {
+			&:last-child {
+				margin-left: 5px;
+				font-weight: normal;
+				font-size: 13px;
+				line-height: 15px;
+				color: #ffffff;
+				background: #ef302e;
+				border-radius: 5px;
+				padding: 3px 20px 3px 20px;
+				text-transform: none;
+			}
+		}
+	}
+	&__links {
+		display: flex;
+		column-gap: 25px;
+		justify-content: space-between;
+		@media (max-width: $mobileSmall) {
+			flex-direction: column;
+			row-gap: 10px;
+		}
+	}
+	&__link {
+		position: relative;
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border: 5px solid #fff;
+		}
+	}
+}
+//BORDER========================================================================================================================================================
+
+.border-top-left {
+	&::before,
+	&::after {
+		content: "";
+		background: #cfdfe7;
+		position: absolute;
+		width: 50px;
+		height: 5px;
+	}
+	&::after {
+		content: "";
+		transform: rotate(90deg) translate(23px, 23px);
+	}
+}
+.border-bottom-left {
+	&::before,
+	&::after {
+		content: "";
+		background: #cfdfe7;
+		position: absolute;
+		width: 50px;
+		height: 5px;
+		bottom: 0;
+	}
+	&::after {
+		content: "";
+		transform: rotate(90deg) translate(-23px, 23px);
+	}
+}
+.border-bottom-right {
+	&::before,
+	&::after {
+		content: "";
+		background: #cfdfe7;
+		position: absolute;
+		width: 50px;
+		height: 5px;
+		bottom: 0;
+		right: 0;
+	}
+	&::after {
+		content: "";
+		transform: rotate(90deg) translate(-23px, -23px);
+	}
+}
+.border-top-right {
+	&::before,
+	&::after {
+		content: "";
+		background: #cfdfe7;
+		position: absolute;
+		width: 50px;
+		height: 5px;
+		top: 0;
+		right: 0;
+	}
+	&::after {
+		content: "";
+		transform: rotate(90deg) translate(23px, -23px);
+	}
+}
+//BORDER========================================================================================================================================================
+
+//STREAMS END========================================================================================================================================================
+
+.block {
+	&__container {
+		display: flex;
+		column-gap: 25px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			row-gap: 60px;
+		}
+	}
+	&__news {
+		flex: 1 1 65%;
+		@media (max-width: $mobile) {
+			.border-top-right {
+				&::before,
+				&::after {
+					width: 18px;
+					height: 2px;
+				}
+				&::after {
+					transform: rotate(90deg) translate(9px, -9px);
+				}
+			}
+			.news__img img {
+				border-width: 2px;
+			}
+			.border-bottom-right {
+				&::before,
+				&::after {
+					width: 18px;
+					height: 2px;
+				}
+				&::after {
+					content: "";
+					transform: rotate(90deg) translate(-9px, -9px);
+				}
+			}
+			.border-top-left {
+				&::before,
+				&::after {
+					width: 18px;
+					height: 2px;
+				}
+				&::after {
+					content: "";
+					transform: rotate(90deg) translate(9px, 9px);
+				}
+			}
+			.border-bottom-left {
+				&::before,
+				&::after {
+					width: 18px;
+					height: 2px;
+				}
+				&::after {
+					content: "";
+					transform: rotate(90deg) translate(-9px, 9px);
+				}
+			}
+		}
+	}
+	&__info {
+		flex: 1 1 31%;
+	}
+}
+
+//NEWS========================================================================================================================================================
+
+.news {
+	&__title {
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 27px;
+		text-transform: uppercase;
+		color: #485f7c;
+		margin-bottom: 15px;
+		&::first-letter {
+			color: #ef302e;
+		}
+		@media (max-width: $mobile) {
+			font-size: 18px;
+		}
+	}
+	&__item {
+		display: block;
+		margin-bottom: 50px;
+		@media (max-width: $mobile) {
+			margin-bottom: 25px;
+		}
+	}
+	&__img {
+		position: relative;
+		margin-bottom: 25px;
+		@media (max-width: $mobile) {
+			margin-bottom: 10px;
+		}
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border: 5px solid #fff;
+		}
+	}
+	&__name-data {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 15px;
+		@media (max-width: $mobile) {
+			flex-direction: column;
+			align-items: flex-start;
+			row-gap: 3px;
+			margin-bottom: 13px;
+		}
+	}
+	&__name {
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 24px;
+		@media (max-width: $mobile) {
+			font-size: 16px;
+		}
+	}
+	&__data {
+		font-weight: 500;
+		font-size: 14px;
+		line-height: 17px;
+		opacity: 0.5;
+	}
+	&__descr {
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 140%;
+		color: rgba(72, 95, 124, 0.8);
+		@media (max-width: $mobile) {
+			font-size: 16px;
+		}
+	}
+
+	.pagination {
+		border-top: 2px solid #cfdfe7;
+		padding-top: 15px;
+		display: flex;
+		align-items: center;
+		column-gap: 15px;
+		&__previous {
+			color: #cfdfe7;
+			&:hover {
+				color: #b1c0ce;
+			}
+		}
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-family: Philosopher;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 22px;
+			opacity: 0.3;
+			width: 40px;
+			height: 40px;
+			border: 2px solid #cfdfe7;
+			border-radius: 5px;
+			&:hover,
+			&.active {
+				background: #485f7c;
+				opacity: 0.5;
+				border-color: #485f7c;
+				color: #fff;
+			}
+		}
+		&__next {
+			color: #cfdfe7;
+			transform: rotate(-180deg);
+			&:hover {
+				color: #b1c0ce;
+			}
+		}
+	}
+}
+
+//NEWS========================================================================================================================================================
+
+//INFO========================================================================================================================================================
+
+.servers {
+	margin-bottom: 60px;
+	&__title {
+		font-family: "Philosopher";
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 27px;
+		text-transform: uppercase;
+		&::first-letter {
+			color: #ef302e;
+		}
+		@media (max-width: $mobile) {
+			font-size: 18px;
+		}
+	}
+	&__item {
+		background: #e6eef2;
+		border-radius: 5px;
+		height: 92px;
+		margin-bottom: 5px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 20px;
+		padding: 0px 0px 0px 50px;
+		&:hover {
+			background-color: #e6eef9;
+		}
+		span {
+			color: #a3cf59;
+		}
+	}
+	&__name {
+		margin-bottom: 5px;
+	}
+	&__play {
+		font-family: Montserrat;
+		font-weight: 500;
+		font-size: 13px;
+		line-height: 16px;
+		color: #b1c0ce;
+		span {
+			font-weight: bold;
+			color: inherit;
+		}
+	}
+	&__arena {
+		position: relative;
+		&::before {
+			content: url("@img/servers/arena.png");
+			position: absolute;
+			left: -30px;
+			top: 0px;
+		}
+	}
+	&__reborn {
+		position: relative;
+		&::before {
+			content: url("@img/servers/reborn.png");
+			position: absolute;
+			left: -30px;
+			top: 0px;
+		}
+	}
+	&__exille {
+		position: relative;
+		&::before {
+			content: url("@img/servers/exuille.png");
+			position: absolute;
+			left: -30px;
+			top: 0px;
+		}
+	}
+}
+
+//INFO========================================================================================================================================================
+
+//RATING========================================================================================================================================================
+
+.rating {
+	&__title {
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 27px;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+		&::first-letter {
+			color: #ef302e;
+		}
+	}
+}
+.tabs {
+	padding: 25px;
+	@media (max-width: $mobile) {
+		padding: 15px;
+	}
+	._tab-active {
+		color: #ffffff;
+		background: #485f7c;
+		opacity: 0.5;
+	}
+	&__navigation {
+		display: flex;
+		justify-content: space-between;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #cfdfe7;
+		margin-bottom: 15px;
+		column-gap: 5px;
+		@media (max-width: $mobileSmall) {
+			justify-content: flex-start;
+		}
+	}
+	&__title {
+		width: 104px;
+		height: 40px;
+		// opacity: 0.5;
+		border-radius: 5px;
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+		text-transform: uppercase;
+		border: 1px solid rgba(177, 192, 206, 0.15);
+		color: rgba(72, 95, 124, 0.3);
+		@media (max-width: $mobileSmall) {
+			width: unset;
+			height: unset;
+			padding: 10px 15px;
+			font-size: 13px;
+		}
+	}
+	&__content {
+	}
+	&__body {
+	}
+
+	&__firstline {
+		display: flex;
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 13px;
+		line-height: 15px;
+		opacity: 0.15;
+		margin-bottom: 10px;
+		.tabs__score {
+			text-align: right;
+		}
+	}
+
+	&__item {
+		display: flex;
+		padding-bottom: 10px;
+		border-bottom: 1px solid #cfdfe7;
+		margin-bottom: 10px;
+	}
+	&__number {
+		flex: 0 1 10%;
+		font-family: Philosopher;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 18px;
+		margin-right: 10px;
+		@media (max-width: $mobile) {
+			font-size: 14px;
+		}
+	}
+	&__nik {
+		flex: 1 1 auto;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		position: relative;
+		display: flex;
+		@media (max-width: $mobile) {
+			font-size: 14px;
+		}
+	}
+
+	&__img {
+		img {
+			vertical-align: baseline;
+			margin-right: 5px;
+		}
+	}
+	&__score {
+		flex: 0 1 30%;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 20px;
+		text-align: right;
+		@media (max-width: $mobileSmall) {
+			flex: 1 1 30%;
+			font-size: 13px;
+		}
+		span {
+			color: #ef302e;
+		}
+	}
+}
+
+//RATING========================================================================================================================================================

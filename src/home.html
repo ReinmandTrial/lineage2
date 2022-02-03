@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Главная"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+
+			<div class="section">
+				<div class="section__banner banner">
+					<div class="banner__container">
+						<div class="banner__content">
+							<p class="banner__title">Servername x1000</p>
+							<p class="banner__subtitle">Уникальные нововведения <br> и интересный геймплей</p>
+							<a href="#" class="banner__button">Начать играть</a>
+						</div>
+					</div>
+					<div class="banner__bg bg-ibg">
+						<img src="@img/header/bg.jpg" alt="">
+					</div>
+					<div class="banner__bg-mob bg-ibg ">
+						<img src="@img/header/bg-mob.jpg" alt="">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="section">
+				<div class="section__streams streams">
+					<div class="streams__container">
+						<div class="streams__content">
+							<p class="streams__title"><span>C</span>тримы <span>Онлайн</span></p>
+							<div class="streams__links">
+								<a href="#" class="streams__link ">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/streams/1.png" alt="streams"></a>
+								<a href="#" class="streams__link ">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/streams/2.png" alt="streams"></a>
+								<a href="#" class="streams__link ">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/streams/3.png" alt="streams"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<div class="section__block block">
+					<div class="block__container">
+						<div class="block__news news">
+							<p class="news__title">Последние новости</p>
+							<a href="" class="news__item">
+								<div class="news__img">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/news/1.png" alt="">
+								</div>
+								<div class="news__name-data">
+									<p class="news__name">Запущен ЗБТ сервер</p>
+									<p class="news__data">21.10.2021 в 0:12</p>
+								</div>
+								<p class="news__descr">Тест сервер запущен. Все необходимое для теста находится в магазине ОБТ.
+									Что бы попасть на тест сервер нужно зарегистрироваться на сайте и скачать патч с сайта
+									(Апдейт делать не надо).</p>
+							</a>
+							<a href="" class="news__item">
+								<div class="news__img">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/news/2.png" alt="">
+								</div>
+								<div class="news__name-data">
+									<p class="news__name">Подняли форум для общения</p>
+									<p class="news__data">21.10.2021 в 23:10</p>
+								</div>
+								<p class="news__descr">Уважаемые игроки! Мы подняли для вас форум. О всех найденных недоработках
+									сообщайте на форуме. Там вы найдёте много полезной информации, а также будете в курсе
+									последних новостей.</p>
+							</a>
+							<a href="" class="news__item">
+								<div class="news__img">
+									<span class="border-top-left"></span>
+									<span class="border-bottom-left"></span>
+									<span class="border-top-right"></span>
+									<span class="border-bottom-right"></span>
+									<img src="@img/news/3.png" alt="">
+								</div>
+								<div class="news__name-data">
+									<p class="news__name">Первая новость</p>
+									<p class="news__data">21.10.2021 в 09:18</p>
+								</div>
+								<p class="news__descr">Принялись за создание уникального сервера. В плане реализовать сервер
+									с крафт системой на с4 хрониках. Рейты сервера х1000</p>
+							</a>
+							<div class="news__pagination pagination">
+								<span class="pagination__previous _icon-arrow"></span>
+								<a class="pagination__link">1</a>
+								<a class="pagination__link active">2</a>
+								<a class="pagination__link">3</a>
+								<span class="pagination__next _icon-arrow"></span>
+							</div>
+						</div>
+						<div class="block__info info">
+							<div class="info__servers servers">
+								<div class="servers__title">Наши сервера</div>
+								<a href="#" class="servers__item">
+									<div class="servers__arena">
+										<p class="servers__name ">Arena <span>x1000</span></p>
+										<p class="servers__play">игроков онлайн: <span>3503</span></p>
+									</div>
+								</a>
+								<a href="#" class="servers__item">
+									<p class="servers__name servers__reborn">Reborn <span>x1</span></p>
+									<p class="servers__play">игроков онлайн: <span>Офлайн</span></p>
+								</a>
+								<a href="#" class="servers__item">
+									<p class="servers__name servers__exille">Exille <span>x300</span></p>
+									<p class="servers__play">игроков онлайн: <span>Офлайн</span></p>
+								</a>
+							</div>
+							<div class="info__rating rating">
+								<div class="rating__title">Рейтинг лучших</div>
+								<div data-tabs class="tabs">
+									<nav data-tabs-titles class="tabs__navigation">
+										<button type="submit" class="tabs__title _tab-active">x1000</button>
+										<button type="submit" class="tabs__title">x1</button>
+										<button type="submit" class="tabs__title">x300</button>
+									</nav>
+									<div data-tabs-body class="tabs__content">
+										<div class="tabs__body">
+											<div class="tabs__firstline">
+												<p class="tabs__number">#</p>
+												<p class="tabs__nik">Игрок</p>
+												<p class="tabs__score">PvP/PK</p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/1.png"
+															alt=""></span> Skad1zle</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/4.png"
+															alt=""></span> Ghukrcali</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/5.png"
+															alt=""></span> Fan</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+										</div>
+
+										<div class="tabs__body">
+											<div class="tabs__firstline">
+												<p class="tabs__number">#</p>
+												<p class="tabs__nik">Игрок</p>
+												<p class="tabs__score">PvP/PK</p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/2.png"
+															alt=""></span> Condaug</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+										</div>
+										<div class="tabs__body">
+											<div class="tabs__firstline">
+												<p class="tabs__number">#</p>
+												<p class="tabs__nik">Игрок</p>
+												<p class="tabs__score">PvP/PK</p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+											<div class="tabs__item">
+												<p class="tabs__number">1</p>
+												<p class="tabs__nik"> <span class="tabs__img"><img src="@img/rating/3.png"
+															alt=""></span> Mardoshku</p>
+												<p class="tabs__score">15745 /<span>1455</span></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	</div>
+	</main>
+	@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_popup.htm',{})
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
